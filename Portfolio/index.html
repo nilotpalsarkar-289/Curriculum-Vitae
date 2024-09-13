@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
-        <nav class="navbar">
-            <a href="#" >Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Skills</a>
-            <a href="#" >Portfolio</a>
-            <a href="#" >Contact</a>
-        </nav>
-    </header>
-    </section class='home'>
-        <div class='home-content'>
-            <h3>Hi there, My name is</h3>
-            <h1>Nilotpal Sarkar</h1>
-            <p>I'm a senior year ungrad in electronics and communciations engineering.
-                <br>expertise in signal processing, machine learning and communications.
-            <div class="home-sci"
-            </div>
-        </section>
+  <!-- Header Section -->
+  <header class="bg-gray-900 text-white">
+    <div class="container mx-auto p-6">
+      <h1 class="text-4xl font-bold">Nilotpal Sarkar</h1>
+      <p class="mt-2">Final Year Undergraduate, Dept. of Electronics and Communications</p>
+      <p>Project Intern, IIT Roorkee</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="container mx-auto p-6 mt-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+    <p class="text-gray-600">
+      I am a final-year Electronics and Communication Engineering student with hands-on experience in electronics systems design and signal processing.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container mx-auto p-6 mt-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold text-gray-700">Distance Sensor System</h3>
+        <p class="text-gray-600 mt-2">Developed a real-time object detection and distance measurement system using ultrasonic sensors.</p>
+        <a href="#" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+      </div>
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold text-gray-700">Health App (Sanzeevni)</h3>
+        <p class="text-gray-600 mt-2">Worked on a health app that provides organic remedies to health-related queries and promotes a holistic lifestyle.</p>
+        <a href="#" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="container mx-auto p-6 mt-8">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Experience</h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+      <h3 class="text-xl font-semibold text-gray-700">Project Intern at IIT Roorkee</h3>
+      <p class="text-gray-600 mt-2">Collaborated on a Project based on RF circuits and Microwave Engineering.</p>
+      <p class="text-gray-600 mt-2">Duration: 6 months</p>
+      <h3 class="text-xl font-semibold text-gray-700">Winter Research Intern at NIT Silchar</h3>
+      <p class="text-gray-600 mt-2">Collaborated on a Project based on Semiconductors for 5G Applications.</p>
+      <p class="text-gray-600 mt-2">Duration: 4 months</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto p-6 mt-8 bg-gray-200 rounded-lg">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact</h2>
+    <form id="contactForm" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500">
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500">
+      <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+      <button type="submit" class="bg-blue-500 text-white p-3 rounded-lg w-full">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white mt-8 p-6 text-center">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-lg font-semibold">Nilotpal Sarkar</h3>
+          <p>Electronics and Communication Engineer | Research Intern</p>
+        </div>
+        <div>
+          <a href="https://github.com/nilotpalsarkar-289" class="text-gray-400 hover:text-white mx-2">GitHub</a>
+          <a href="https://linkedin.com/in/nilotpalsarkar" class="text-gray-400 hover:text-white mx-2">LinkedIn</a>
+          <a href="mailto:nilotpalsarkar289@gmail.com" class="text-gray-400 hover:text-white mx-2">Email</a>
+        </div>
+      </div>
+      <p class="mt-4 text-gray-400">&copy; 2024 Nilotpal Sarkar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
